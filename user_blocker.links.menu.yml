@@ -1,0 +1,5 @@
+user_blocker.user_blocker_form:
+  title: 'Block User'
+  description: 'Block a user'
+  route_name: user_blocker.user_blocker_form
+  parent: system.admin_config

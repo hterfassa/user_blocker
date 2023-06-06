@@ -57,9 +57,6 @@ class UserBlockerTest extends BrowserTestBase {
     $assert_session->pageTextContains('Username');
 
     // Test case of a user trying to block themselves.
-    // Note that Javascript is disabled for this type of functional test, so
-    // the username, not user ID should be passed in as the form value (as one
-    // would expect when using an entity_autocomplete widget).
     $page->fillField('edit-uid', $this->testUser->label());
     $page->pressButton('Submit');
     $assert_session->pageTextContains('You cannot block your own account.');
